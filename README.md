@@ -49,7 +49,6 @@ CUDA_VISIBLE_DEVICES=0 python train.py
 cocoGt_path         = '/home/public/DMIST/100_coco_val.json'
 dataset_img_path    = '/home/public/DMIST/'
 ```
-Then, run:
 ```python
 python test.py
 ```
