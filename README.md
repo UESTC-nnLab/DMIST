@@ -8,13 +8,13 @@ The Pytorch implementation of the paper **Towards Dense Moving Infrared Small Ta
 - Datasets are available at [DMIST](https://pan.baidu.com/s/1nKzesU9Glv67qdMosmqyMQ?pwd=bu9t)(code: bu9t) and [IRDST](https://pan.baidu.com/s/1igjIT30uqfCKjLbmsMfoFw?pwd=rrnr)(code: rrnr).
 - Or you can download IRDST directly from the website: [IRDST](https://xzbai.buaa.edu.cn/datasets.html). 
 
--You need to reorganize these datasets in a format similar to the **DMIST_train.txt** and **DMIST_val.txt** files we provided (`txt files` are used in training).  We provide the `txt files` for DMIST and IRDST.
+- You need to reorganize these datasets in a format similar to the **DMIST_train.txt** and **DMIST_val.txt** files we provided (`txt files` are used in training).  We provide the `txt files` for DMIST and IRDST.
 For example:
 ```python
 train_annotation_path = '/home/LASNet/DMIST_train.txt'
 val_annotation_path = '/home/LASNet/DMIST_60_val.txt'
 ```
-- Or you can generate a new `txt file` based on the path of your datasets. `Text files` (e.g., `DMIST_60_val.txt`) can be generated from `json files` (e.g., `60_coco_val.json`). We also provide all `json files` for [DMIST](https://pan.baidu.com/s/1nKzesU9Glv67qdMosmqyMQ?pwd=bu9t)(code: bu9t) and [IRDST](https://pan.baidu.com/s/1igjIT30uqfCKjLbmsMfoFw?pwd=rrnr).
+- Or you can generate a new `txt file` based on the path of your datasets. `Text files` (e.g., `DMIST_60_val.txt`) can be generated from `json files` (e.g., `60_coco_val.json`). We also provide all `json files` for [DMIST](https://pan.baidu.com/s/1nKzesU9Glv67qdMosmqyMQ?pwd=bu9t) and [IRDST](https://pan.baidu.com/s/1igjIT30uqfCKjLbmsMfoFw?pwd=rrnr).
 
 ``` python 
 python utils_coco/coco_to_txt.py
@@ -49,6 +49,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py
 cocoGt_path         = '/home/public/DMIST/100_coco_val.json'
 dataset_img_path    = '/home/public/DMIST/'
 ```
+Then, 
 ```python
 python test.py
 ```
