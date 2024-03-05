@@ -65,6 +65,7 @@ python predict.py
 
 <img src="/readme/PR1.png" width="500px">
 <img src="/readme/PR2.png" width="500px">
+<img src="/readme/PR3.png" width="500px">
 
 ## Contact
 If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.com.
