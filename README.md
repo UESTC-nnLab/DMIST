@@ -8,13 +8,13 @@ The Pytorch implementation of the paper **Towards Dense Moving Infrared Small Ta
 - Datasets are available at [DMIST](https://pan.baidu.com/s/1nKzesU9Glv67qdMosmqyMQ?pwd=bu9t)(code: bu9t) and [IRDST](https://pan.baidu.com/s/1igjIT30uqfCKjLbmsMfoFw?pwd=rrnr)(code: rrnr).
 - Or you can download IRDST directly from the website: [IRDST](https://xzbai.buaa.edu.cn/datasets.html). 
 
--You need to reorganize these datasets in a format similar to the **DMIST_train.txt** and **DMIST_val.txt** files we provided ([txt files] are used in training).  We provide the [txt files] for DMIST and IRDST.
+-You need to reorganize these datasets in a format similar to the **DMIST_train.txt** and **DMIST_val.txt** files we provided (`txt files` are used in training).  We provide the `txt files` for DMIST and IRDST.
 For example:
 ```python
 train_annotation_path = '/home/LASNet/DMIST_train.txt'
 val_annotation_path = '/home/LASNet/DMIST_60_val.txt'
 ```
-- Or you can generate a new [txt file] based on the path of your datasets. [Text files] (e.g., [DMIST_60_val.txt]) can be generated from [json files] (e.g., [60_coco_val.json]). We also provide all [json files] for [DMIST](https://pan.baidu.com/s/1nKzesU9Glv67qdMosmqyMQ?pwd=bu9t)(code: bu9t) and [IRDST](https://pan.baidu.com/s/1igjIT30uqfCKjLbmsMfoFw?pwd=rrnr).
+- Or you can generate a new `txt file` based on the path of your datasets. `Text files` (e.g., `DMIST_60_val.txt`) can be generated from `json files` (e.g., `60_coco_val.json`). We also provide all `json files` for [DMIST](https://pan.baidu.com/s/1nKzesU9Glv67qdMosmqyMQ?pwd=bu9t)(code: bu9t) and [IRDST](https://pan.baidu.com/s/1igjIT30uqfCKjLbmsMfoFw?pwd=rrnr).
 
 ``` python 
 python utils_coco/coco_to_txt.py
@@ -36,14 +36,14 @@ python utils_coco/coco_to_txt.py
 ## Usage
 
 ### Train
-- Note: Please use different [dataloaders] for different datasets. For example, if you want to use IRDST dataset for training, please change the [dataloader] in [train.py] to: [from utils.dataloader_for_IRDST import seqDataset, dataset_collate].
+- Note: Please use different `dataloaders` for different datasets. For example, if you want to use IRDST dataset for training, please change the `dataloader` in `train.py` to: `from utils.dataloader_for_IRDST import seqDataset, dataset_collate`.
 ```python
 CUDA_VISIBLE_DEVICES=0 python train.py
 ```
 
 ### Test
 - Usually **model_best.pth** is not necessarily the best model. The best model may have a lower val_loss or a higher AP50 during verification.
-- You need to change the path of the [json file] of test sets. For example:
+- You need to change the path of the `json file` of test sets. For example:
 ```python
 #Use DMIST-100 dataset for test.
 cocoGt_path         = '/home/public/DMIST/100_coco_val.json'
