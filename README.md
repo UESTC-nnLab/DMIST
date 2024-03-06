@@ -44,7 +44,7 @@ DMIST
 * Tested on Ubuntu 20.04, with CUDA 11.3, and 1x NVIDIA 3090.
 
 
-## Usage
+## Usage of baseline LASNet
 
 ### Train
 - Note: Please use different `dataloaders` for different datasets. For example, if you want to use IRDST dataset for training, please change the `dataloader` in `train.py` to: `from utils.dataloader_for_IRDST import seqDataset, dataset_collate`.
