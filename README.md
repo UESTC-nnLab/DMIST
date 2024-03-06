@@ -5,7 +5,7 @@ The DMIST benchmark datasets and baseline model implementation of the paper **To
 <img src="/readme/vis.png" width="1000px">
 
 
-## Benchmark Datasets
+## Benchmark Datasets (bounding box-based)
 - Our proposed dense target datasets DMIST-60 and DMIST-100.
 - Datasets are available at [DMIST](https://pan.baidu.com/s/1nKzesU9Glv67qdMosmqyMQ?pwd=bu9t)(code: bu9t) and [IRDST](https://pan.baidu.com/s/1igjIT30uqfCKjLbmsMfoFw?pwd=rrnr)(code: rrnr). Or you can download IRDST directly from the website: [IRDST](https://xzbai.buaa.edu.cn/datasets.html). 
 
