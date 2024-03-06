@@ -19,6 +19,18 @@ val_annotation_path = '/home/LASNet/DMIST_60_val.txt'
 python utils_coco/coco_to_txt.py
 ```
 
+- The folder structure should look like this:
+```
+DMIST
+├──coco_train.json
+├──60_coco_val.json
+├──100_coco_val.json
+├──images
+    ├──train
+        ├──test60
+        ├──test100
+```
+
 
 ## Prerequisite
 
