@@ -87,7 +87,7 @@ python test.py
 - We support `video` and `single-frame image` prediction.
 ```python
 # mode = "video" #Predict a sequence
-mode = "predict"  #Predict a single frame image 
+mode = "predict"  #Predict a single-frame image 
 ```
 ```python
 python predict.py
