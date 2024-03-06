@@ -1,6 +1,6 @@
 # DMIST-Benchmark
 
-The Pytorch implementation of the paper **Towards Dense Moving Infrared Small Target Detection: Datasets and Baseline LASNet**
+The Pytorch implementation of the paper **Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline**
 
 <img src="/readme/vis.png" width="1000px">
 
