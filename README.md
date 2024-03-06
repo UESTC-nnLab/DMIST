@@ -2,6 +2,8 @@
 
 The Pytorch implementation of the paper **Towards Dense Moving Infrared Small Target Detection: Datasets and Baseline LASNet**
 
+<img src="/readme/vis.png" width="600px">
+
 
 ## Benchmark Datasets
 - Our proposed dense target datasets DMIST-60 and DMIST-100.
