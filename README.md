@@ -38,7 +38,7 @@ DMIST
             ├─ ...
     ├─test60
         ├─data6
-	        ├─0.bmp
+            ├─0.bmp
             ├─0.txt
             ├─ ...
             ├─398.bmp
