@@ -1,6 +1,6 @@
 # DMIST-Benchmark
 
-The Pytorch implementation of the paper **Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline**
+The DMIST benchmark datasets and baseline model implementation of the paper **Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline**
 
 <img src="/readme/vis.png" width="1000px">
 

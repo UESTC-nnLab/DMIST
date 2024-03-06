@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from scipy.ndimage import gaussian_filter
-from .darknet import BaseConv, CSPDarknet, CSPLayer, DWConv
+from .darknet import BaseConv
 from .RDIAN.segmentation import RDIAN
 
 
@@ -254,15 +254,11 @@ class Linking_Aware_Sliced_Module(nn.Module):
 
                     cur_input = self.linking_1['%d%d%d'%(deep_idx,layer_idx,t)](cur_layer_input)
                     cur_input2 = nn.functional.softmax(cur_input, dim=1)
-                    # cur_input2 = F.gumbel_softmax(cur_input, tau=1, hard=True, dim=1) ############
                     selected_cur_input_index = torch.argmax(cur_input2[0,:,0,0,0])
                     cur_input = cur_input[:,selected_cur_input_index,:,:,:]
-                    
-                    
                    
                     s_input = self.linking_2['%d%d%d'%(deep_idx,layer_idx,t)](head_input)
                     s_input2 = nn.functional.softmax(s_input, dim=1)
-                    # s_input2 = F.gumbel_softmax(s_input, tau=1, hard=True, dim=1) ############
                     selected_s_input_index = torch.argmax(s_input2[0,:,0,0,0])
                     s_input = s_input[:,selected_s_input_index,:,:,:]
                     
@@ -281,13 +277,11 @@ class Linking_Aware_Sliced_Module(nn.Module):
 
                         pp_h = self.state_1['%d%d%d%d'%(deep_idx,layer_idx,t,1)](pp_h)
                         pp_h2 = nn.functional.softmax(pp_h, dim=1)
-                        # pp_h2 = F.gumbel_softmax(pp_h, tau=1, hard=True, dim=1) ##############
                         selected_pp_h_index = torch.argmax(pp_h2[0,:,0,0,0])        
                         pp_h = pp_h[:,selected_pp_h_index,:,:,:]
                         
                         pp_c = self.state_1['%d%d%d%d'%(deep_idx,layer_idx,t,2)](pp_c)
                         pp_c2 = nn.functional.softmax(pp_c, dim=1)
-                        # pp_c2 = F.gumbel_softmax(pp_c, tau=1, hard=True, dim=1) ###############
                         selected_pp_c_index = torch.argmax(pp_c2[0,:,0,0,0])
                         pp_c = pp_c[:,selected_pp_c_index,:,:,:]
 
@@ -317,12 +311,10 @@ class Linking_Aware_Sliced_Module(nn.Module):
                         pp_mc = self.state_2['%d%d%d%d'%(deep_idx,layer_idx,t,2)](pp_mc)
 
                         pp_mh2 = nn.functional.softmax(pp_mh, dim=1)
-                        # pp_mh2 = F.gumbel_softmax(pp_mh, tau=1, hard=True, dim=1)  ################
                         selected_pp_mh_index = torch.argmax(pp_mh2[0,:,0,0,0])
                         pp_mh = pp_mh[:,selected_pp_mh_index,:,:,:]
 
                         pp_mc2 = nn.functional.softmax(pp_mc, dim=1)
-                        # pp_mc2 = F.gumbel_softmax(pp_mc, tau=1, hard=True, dim=1) ################
                         selected_pp_mc_index = torch.argmax(pp_mc2[0,:,0,0,0])
                         pp_mc = pp_mc[:,selected_pp_mc_index,:,:,:]
                
