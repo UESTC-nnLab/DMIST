@@ -27,8 +27,8 @@ DMIST
 ├──100_coco_val.json
 ├──images
     ├──train
-        ├──test60
-        ├──test100
+    ├──test60
+    ├──test100
 ```
 
 
