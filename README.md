@@ -24,13 +24,34 @@ python utils_coco/coco_to_txt.py
 - The folder structure should look like this:
 ```
 DMIST
-├──coco_train.json
-├──60_coco_val.json
-├──100_coco_val.json
-├──images
-    ├──train
-    ├──test60
-    ├──test100
+├─coco_train.json
+├─60_coco_val.json
+├─100_coco_val.json
+├─images
+    ├─train
+        ├─data5
+            ├─0.bmp
+            ├─0.txt
+            ├─ ...
+            ├─2999.bmp
+            ├─2999.txt
+            ├─ ...
+        ├─test60
+            ├─data6
+	    	    ├─0.bmp
+                ├─0.txt
+                ├─ ...
+                ├─398.bmp
+                ├─398.txt
+                ├─ ...
+        ├─test100
+                ├─data6
+	    	    ├─0.bmp
+                ├─0.txt
+                ├─ ...
+                ├─398.bmp
+                ├─398.txt
+                ├─ ...
 ```
 
 
@@ -56,6 +77,9 @@ CUDA_VISIBLE_DEVICES=0 python train.py
 
 ### Test
 - Usually `model_best.pth` is not necessarily the best model. The best model may have a lower val_loss or a higher AP50 during verification.
+```python
+"model_path": '/home/LASNet/logs/model.pth'
+```
 - You need to change the path of the `json file` of test sets. For example:
 ```python
 #Use DMIST-100 dataset for test.
@@ -86,7 +110,4 @@ If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.co
 ## References
 1. X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-K. Wong, and W.-c. Woo, “Convolutional lstm network: A machine learning approach for precipitation nowcasting,” Advances in Neural Information Processing Systems, vol. 28, 2015.
 2. Z. Ge, S. Liu, F. Wang, Z. Li, and J. Sun, “Yolox: Exceeding yolo series in 2021,” arXiv preprint arXiv:2107.08430, 2021.
-
-
-
 
