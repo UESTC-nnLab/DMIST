@@ -84,7 +84,7 @@ python test.py
 ```
 
 ### Visulization
-- We support video and single-frame image prediction.
+- We support `video` and `single-frame image` prediction.
 ```python
 # mode = "video" #Predict a sequence
 mode = "predict"  #Predict a single frame image 
