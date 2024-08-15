@@ -61,7 +61,7 @@ class LASNet(nn.Module):
         
         if self.training:
             pred_m = self.motion_head(torch.cat([motion[:,i,:,:,:] for i in range(self.num_frame)], 1)) 
-            pred_m = F.interpolate(pred_m, size=[inputs.shape[2], inputs.shape[3]], mode='bilinear', align_corners=True)
+            pred_m = F.interpolate(pred_m, size=[inputs.shape[3], inputs.shape[4]], mode='bilinear', align_corners=True)
             mm_loss = self.mm_loss(pred_m, multi_targets)
 
         if self.training:
@@ -82,7 +82,7 @@ class motion_mask_loss(nn.Module):
                 for t in range(gt_target.shape[2]):
                     x, y = gt_target[b,f,t,:2]
                     s_x, s_y = gt_target[b,f,t,2:4]
-                    heatmap[b,int(x):int(x) + int(s_x), int(y):int(y) + int(s_y) ] = 255
+                    heatmap[b, int(y):int(y) + int(s_y), int(x):int(x) + int(s_x) ] = 255
         target = heatmap.unsqueeze(1)
         pred = torch.sigmoid(pred_m)
         smooth = 1
