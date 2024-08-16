@@ -135,6 +135,7 @@ python predict.py
     <td align="center">84.06</td>
     <td align="center">86.51</td>
   </tr>
+  <tr>
 </table>
 
 - PR curve on DMIST and IRDST datasets in the paper.
