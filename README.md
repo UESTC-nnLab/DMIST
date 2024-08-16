@@ -127,6 +127,14 @@ python predict.py
     <td align="center">68.68</td>
     <td align="center">80.25</td>
   </tr>
+  <tr>
+    <td align="center">LASNet</td>
+    <td align="center">IRDST</td>
+    <td align="center">74.50</td>
+    <td align="center">89.10</td>
+    <td align="center">84.06</td>
+    <td align="center">86.51</td>
+  </tr>
 </table>
 
 - PR curve on DMIST and IRDST datasets in the paper.
