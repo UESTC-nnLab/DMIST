@@ -1,7 +1,7 @@
 # DMIST-Benchmark 
 ## ***Dense Moving Infrared Small Target Detection***
 
-The DMIST benchmark datasets and baseline model implementation of the paper **Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline** `(under review)`
+The DMIST benchmark datasets and baseline model implementation of the **TGRS 2024** paper **Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline**
 
 <img src="/readme/vis.png" width="1000px">
 
@@ -98,6 +98,36 @@ python predict.py
 ```
 
 ## Results
+- We optimized old codes and retrained model, achieving performance slightly higher than that reported in our paper.
+
+<table>
+  <tr>
+    <th>Method</th>
+    <th>Dataset</th>
+    <th>mAP50 (%)</th>
+    <th>Precision (%)</th>
+    <th>Recall (%)</th>
+    <th>F1 (%)</th>
+    <th>Download</th>
+  </tr>
+  <tr>
+    <td align="center">LASNet</td>
+    <td align="center">DMIST-60</td>
+    <td align="center">76.47</td>
+    <td align="center">95.84</td>
+    <td align="center">80.07</td>
+    <td align="center">87.25</td>
+    <td rowspan="2" align="center"><a href="https://pan.baidu.com/s/1_xt_JJ2FclC8xSCuYLZJqA?pwd=ef6z">models</a> (code: ef6z)</td>
+  </tr>
+  <tr>
+    <td align="center">LASNet</td>
+    <td align="center">DMIST-100</td>
+    <td align="center">65.70</td>
+    <td align="center">96.52</td>
+    <td align="center">68.68</td>
+    <td align="center">80.25</td>
+  </tr>
+</table>
 
 - PR curve on DMIST and IRDST datasets.
 - We provide the results on [DMIST-60](./results/DMIST-60),  [DMIST-100](./results/DMIST-100) and [IRDST](./results/IRDST), and you can plot them using Python.
@@ -110,7 +140,20 @@ python predict.py
 If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.com.
 
 ## References
-1. X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-K. Wong, and W.-c. Woo, “Convolutional lstm network: A machine learning approach for precipitation nowcasting,” Advances in Neural Information Processing Systems, vol. 28, 2015.
-2. Z. Ge, S. Liu, F. Wang, Z. Li, and J. Sun, “Yolox: Exceeding yolo series in 2021,” arXiv preprint arXiv:2107.08430, 2021.
-3. B. Hui et al., “A dataset for infrared image dim-small aircraft target detection and tracking under ground/air background,” Sci. Data Bank, CSTR 31253.11.sciencedb.902, Oct. 2019.
+S. Chen, L. Ji, J. Zhu, M. Ye and X. Yao, "SSTNet: Sliced Spatio-Temporal Network With Cross-Slice ConvLSTM for Moving Infrared Dim-Small Target Detection," in IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-12, 2024, Art no. 5000912, doi: 10.1109/TGRS.2024.3350024. 
 
+## Citation
+
+If you find this repo useful, please cite our paper. 
+
+```
+@ARTICLE{10636251,
+  author={Chen, Shengjia and Ji, Luping and Zhu, Sicheng and Ye, Mao and Ren, Haohao and Sang, Yongsheng},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TGRS.2024.3443280}}
+```
