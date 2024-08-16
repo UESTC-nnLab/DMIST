@@ -140,7 +140,8 @@ python predict.py
 If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.com.
 
 ## References
-S. Chen, L. Ji, J. Zhu, M. Ye and X. Yao, "SSTNet: Sliced Spatio-Temporal Network With Cross-Slice ConvLSTM for Moving Infrared Dim-Small Target Detection," in IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-12, 2024, Art no. 5000912, doi: 10.1109/TGRS.2024.3350024. 
+1. S. Chen, L. Ji, J. Zhu, M. Ye and X. Yao, "SSTNet: Sliced Spatio-Temporal Network With Cross-Slice ConvLSTM for Moving Infrared Dim-Small Target Detection," in IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-12, 2024, Art no. 5000912, doi: 10.1109/TGRS.2024.3350024. 
+2. B. Hui et al., “A dataset for infrared image dim-small aircraft target detection and tracking under ground/air background,” Sci. Data Bank, CSTR 31253.11.sciencedb.902, Oct. 2019.
 
 ## Citation
 
