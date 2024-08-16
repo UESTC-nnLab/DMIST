@@ -129,7 +129,7 @@ python predict.py
   </tr>
 </table>
 
-- PR curve on DMIST and IRDST datasets.
+- PR curve on DMIST and IRDST datasets in the paper.
 - We provide the results on [DMIST-60](./results/DMIST-60),  [DMIST-100](./results/DMIST-100) and [IRDST](./results/IRDST), and you can plot them using Python.
 
 <img src="/readme/PR1.png" width="500px">
