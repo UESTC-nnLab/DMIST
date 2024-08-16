@@ -117,7 +117,7 @@ python predict.py
     <td align="center">95.84</td>
     <td align="center">80.07</td>
     <td align="center">87.25</td>
-    <td rowspan="3" align="center"><a href="https://pan.baidu.com/s/1_xt_JJ2FclC8xSCuYLZJqA?pwd=ef6z">models</a> (code: ef6z)</td>
+    <td rowspan="3" align="center"><a href="https://pan.baidu.com/s/1nOdz29SnwkxUr6liYEYElA?pwd=av6r">models</a> (code: av6r)</td>
   </tr>
   <tr>
     <td align="center">LASNet</td>
