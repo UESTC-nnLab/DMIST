@@ -84,7 +84,7 @@ cocoGt_path         = '/home/public/DMIST/100_coco_val.json'
 dataset_img_path    = '/home/public/DMIST/'
 ```
 ```python
-python test.py
+python test_DMIST.py
 ```
 
 ### Visulization
