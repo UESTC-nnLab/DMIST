@@ -117,7 +117,11 @@ python predict.py
     <td align="center">95.84</td>
     <td align="center">80.07</td>
     <td align="center">87.25</td>
-    <td rowspan="3" align="center"><a href="https://pan.baidu.com/s/1nOdz29SnwkxUr6liYEYElA?pwd=av6r">models</a> (code: av6r)</td>
+    <td rowspan="3" align="center">
+      <a href="https://pan.baidu.com/s/1nOdz29SnwkxUr6liYEYElA?pwd=av6r">Baidu</a> (code: av6r)
+      <br>
+      <a href="https://drive.google.com/drive/folders/13CvH9muxs-9fcgeSZJWraw1StWxE3zek?usp=sharing">Google</a>
+    </td>
   </tr>
   <tr>
     <td align="center">LASNet</td>
@@ -135,8 +139,9 @@ python predict.py
     <td align="center">84.06</td>
     <td align="center">86.51</td>
   </tr>
-  <tr>
 </table>
+
+
 
 - PR curve on DMIST and IRDST datasets in the paper.
 - We provide the results on [DMIST-60](./results/DMIST-60),  [DMIST-100](./results/DMIST-100) and [IRDST](./results/IRDST), and you can plot them using Python.
