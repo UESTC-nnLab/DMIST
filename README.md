@@ -119,7 +119,7 @@ python predict.py
     <td align="center">87.25</td>
     <td rowspan="3" align="center">
       <a href="https://pan.baidu.com/s/1nOdz29SnwkxUr6liYEYElA?pwd=av6r">Baidu</a> (code: av6r)
-      <hr style="margin: 5px 0; border: 0; border-top: 1px solid #ccc;">
+      <br><br>
       <a href="https://drive.google.com/drive/folders/13CvH9muxs-9fcgeSZJWraw1StWxE3zek?usp=sharing">Google</a>
     </td>
   </tr>
