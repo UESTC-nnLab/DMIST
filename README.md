@@ -98,7 +98,7 @@ python predict.py
 ```
 
 ## Results
-- We optimized old codes and retrained model, achieving performance slightly higher than that reported in our paper.
+- We optimized old codes and retrained LASNet, achieving slightly better performance results than those reported in our paper.
 
 <table>
   <tr>
