@@ -100,7 +100,6 @@ python predict.py
 ## Results
 - We optimized old codes and retrained model, achieving performance slightly higher than that reported in our paper.
 
-
 <table>
   <tr>
     <th>Method</th>
@@ -118,13 +117,10 @@ python predict.py
     <td align="center">95.84</td>
     <td align="center">80.07</td>
     <td align="center">87.25</td>
-    <td rowspan="3" align="center" style="border-left:1px solid #000;">
-      <div style="padding-bottom:5px; border-bottom: 1px solid #000;">
-        <a href="https://pan.baidu.com/s/1nOdz29SnwkxUr6liYEYElA?pwd=av6r">Baidu</a> (code: av6r)
-      </div>
-      <div style="padding-top:5px;">
-        <a href="https://drive.google.com/drive/folders/13CvH9muxs-9fcgeSZJWraw1StWxE3zek?usp=sharing">Google</a>
-      </div>
+    <td rowspan="3" align="center">
+      <a href="https://pan.baidu.com/s/1nOdz29SnwkxUr6liYEYElA?pwd=av6r">Baidu</a> (code: av6r)
+      <hr style="margin: 5px 0; border: 0; border-top: 1px solid #ccc;">
+      <a href="https://drive.google.com/drive/folders/13CvH9muxs-9fcgeSZJWraw1StWxE3zek?usp=sharing">Google</a>
     </td>
   </tr>
   <tr>
