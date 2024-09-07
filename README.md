@@ -162,13 +162,14 @@ If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.co
 If you find this repo useful, please cite our paper. 
 
 ```
-@ARTICLE{10636251,
+@ARTICLE{chen2024dmist,
   author={Chen, Shengjia and Ji, Luping and Zhu, Sicheng and Ye, Mao and Ren, Haohao and Sang, Yongsheng},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline}, 
+  title={Toward Dense Moving Infrared Small Target Detection: New Datasets and Baseline}, 
   year={2024},
-  volume={},
+  volume={62},
   number={},
-  pages={1-1},
+  pages={1-13},
   doi={10.1109/TGRS.2024.3443280}}
+
 ```
