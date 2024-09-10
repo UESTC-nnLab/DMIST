@@ -168,7 +168,6 @@ If you find this repo useful, please cite our paper.
   title={Toward Dense Moving Infrared Small Target Detection: New Datasets and Baseline}, 
   year={2024},
   volume={62},
-  number={},
   pages={1-13},
   doi={10.1109/TGRS.2024.3443280}}
 
