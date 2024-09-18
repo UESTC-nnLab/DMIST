@@ -118,7 +118,7 @@ python predict.py
     <td align="center">80.07</td>
     <td align="center">87.25</td>
     <td rowspan="3" align="center">
-      <a href="https://pan.baidu.com/s/1nOdz29SnwkxUr6liYEYElA?pwd=av6r">Baidu</a> (code: av6r)
+      <a href="https://pan.baidu.com/s/1Tq9fyLQF64Ly0xR8VSYW3Q?pwd=y7ki">Baidu</a> (code: y7ki)
       <br><br>
       <a href="https://drive.google.com/drive/folders/13CvH9muxs-9fcgeSZJWraw1StWxE3zek?usp=sharing">Google</a>
     </td>
@@ -130,14 +130,6 @@ python predict.py
     <td align="center">96.52</td>
     <td align="center">68.68</td>
     <td align="center">80.25</td>
-  </tr>
-  <tr>
-    <td align="center">LASNet</td>
-    <td align="center">IRDST</td>
-    <td align="center">74.50</td>
-    <td align="center">89.10</td>
-    <td align="center">84.06</td>
-    <td align="center">86.51</td>
   </tr>
 </table>
 
