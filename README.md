@@ -67,7 +67,7 @@ DMIST
 ## Usage of baseline LASNet
 
 ### Train
-- Note: Please use different `dataloaders` for different datasets. For example, if you want to use IRDST dataset for training, please change the `dataloader` in `train.py` to: `from utils.dataloader_for_IRDST import seqDataset, dataset_collate`.
+<!-- - Note: Please use different `dataloaders` for different datasets. For example, if you want to use IRDST dataset for training, please change the `dataloader` in `train.py` to: `from utils.dataloader_for_IRDST import seqDataset, dataset_collate`. -->
 ```python
 CUDA_VISIBLE_DEVICES=0 python train_DMIST.py
 ```
